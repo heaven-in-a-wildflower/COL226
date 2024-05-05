@@ -1,0 +1,30 @@
+Program
+{
+	Clause: Fact
+	{
+		head
+		{
+			atomic_formula { 
+				atom: 'pred1' 
+				term list : [  Function : 'func' Arguments: ( Constant : 'x' ,  Constant : 'y' ),  Constant : 'z'  ] } 
+		}
+	}
+	Clause: Rule
+	{
+		head
+		{
+			atomic_formula { 
+				atom: 'pred2' 
+				term list : [  Function : 'func2' Arguments: ( Function : 'func3' Arguments: ( Variable : 'X' ,  Constant : 'a' ),  Variable : 'Y' ),  Variable : 'Z' ,  Numeral : '-2'  ] } 
+		}
+		body
+		{
+			atomic_formula { 
+				atom: 'pred3' 
+				term list : [  Function : 'func1' Arguments: ( Tuple : < Function : 'func' Arguments: ( Variable : 'X' ,  Constant : 'y' ),  Tuple : < Constant : 'c' ,  Constant : 'd' >>,  Constant : 'a' ),  Variable : 'Z'  ] } ,
+			atomic_formula { 
+				atom: 'pred3' 
+				term list : [  Function : 'func4' Arguments: ( Tuple : < Variable : 'Y' ,  Constant : 'x' >,  Constant : 'b' ),  Variable : 'Z'  ] } 
+		}
+	}
+}

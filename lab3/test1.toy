@@ -1,0 +1,15 @@
+V xA1' := -5.67e-2%
+V y_ %
+V z %
+V w %
+y := (-2+3)*xA1' %
+w := {xA1',y_}
+if((snd(w)>fst(w) and y_=25) or xA1'*2=10)
+        then (z := true) %
+#To see the world in a grain of sand and heaven in a wild flower#
+else (z := false) %
+Str s1 := "love" %
+Str s2 := "2you" %
+Str s3 := s1@s2 %
+list l1 := [1,2,3] %
+;;

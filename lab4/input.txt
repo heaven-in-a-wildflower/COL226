@@ -1,0 +1,2 @@
+pred1(func(x,y),z).
+pred2(func2(func3(X,a),Y),Z,-2*3+12/3) :- pred3(func1(<func(X,y),<c,d>>,a),Z),pred3(func4(<Y,x>,b),Z).
